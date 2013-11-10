@@ -1,0 +1,852 @@
+// CSS Structure
+// 1. Importing
+// 2. Color Variables
+// 3. Number Variables 
+// 4. Fonts
+// 5. Main Elements Styling
+// 6. Text Styles
+// 7. Form Styles
+// 8. Buttons
+// 9. Header
+// 10. Content
+// 11. Sidebar Navigation
+// 12. Left Column
+// 13. Right Column
+// 14. Overlays
+// 15. Media Queries
+
+
+//
+//
+// 1. Importing
+// 
+//
+
+@import "lib/grid";
+@import "lib/mixins";
+@import "lib/normalize";
+@import "../fonts/style";
+@import "variables";
+
+//
+//
+// 2. Color Variables
+// 
+//
+
+@mainColor:	#389CE0;
+@mainLgt10: lighten(@mainColor, 10%);
+@mainLgt20: lighten(@mainColor, 20%);
+@mainLgt40: lighten(@mainColor, 40%);
+@mainDrk5: darken(@mainColor, 5%);
+@mainDrk10: darken(@mainColor, 10%);
+@mainDrk20: darken(@mainColor, 20%);
+@grayButton: #939598;
+@toolsMenuGray: #7c8185;
+@sidebarNavBackground: #e6e7e8;
+@sidebarContentColor: #a7a9ac;
+@darkHeaderText: #f1f2f2;
+@headerBackground: #3E5BB1;
+@headerButtonBackground: #389CE0;
+@headerButtonHover: #45ace5;
+@drkr-grey: #757D85;
+@drk-grey: #888A8C;
+@med-drk-grey: #9DA5A8;
+@med-grey: #A7A9AC;
+@med-lght-grey: #939598;
+@lghtr-grey: #D1D3D4;
+@lght-grey: #E6E7E8;
+@link-color: #29B297;
+@table-text-grey: #2e2e2e;
+@white: #fff;
+@yellow: #FFE966;
+@blue: #3096C9;
+@text-color: #444;
+@dashboard: #389CE0;
+@tracking: #1BAAC1;
+@quote: #D3841C;
+@shipments: #6556C1;
+@billing: #D13F6C;
+@reports: #19BCA4;
+@docRepo: #EF8D2B;
+
+//
+//
+// 3. Number Variables
+// 
+//
+
+@headerHeight: 72px;
+@pageGutter: 35px;
+@sideToolbarSize: 57px;
+
+//
+//
+// 4. Fonts
+// 
+//
+
+@font-face{
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Regular-webfont.eot');
+	src: url('../fonts/OpenSans-Regular-webfont.eot?iefix') format('eot'),
+		 url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Regular-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Italic-webfont.eot');
+	src: url('../fonts/OpenSans-Italic-webfont.eot?iefix') format('eot'),
+		 url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Italic-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Bold-webfont.eot');
+	src: url('../fonts/OpenSans-Bold-webfont.eot?iefix') format('eot'),
+		 url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Bold-webfont.svg#webfont') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Light-webfont.eot');
+	src: url('../fonts/OpenSans-Light-webfont.eot?iefix') format('eot'),
+		 url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Light-webfont.svg#webfont') format('svg');
+	font-weight: lighter;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Semibold-webfont.eot');
+	src: url('../fonts/OpenSans-Semibold-webfont.eot?iefix') format('eot'),
+		 url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+		 url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Semibold-webfont.svg#webfont') format('svg');
+	font-weight: 600;
+	font-style: normal;	
+}
+
+//
+//
+// 5. Main Elements Styling
+// 
+//
+
+html, body{
+	font-family: 'Open Sans', arial, sans-serif;
+}
+
+.wrapper{
+	margin-left: @sideToolbarSize;
+	.clearfix;
+}
+
+.wrapper:after {
+	content: none !important;
+}
+
+//
+//
+// 6. Text Styles
+// 
+//
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+h4 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+h5 {
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: @drkr-grey;
+}
+
+h6 {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-weight: lighter;
+	font-size: 13px;
+	line-height: 24px;
+	margin-bottom: 15px;
+}
+
+a {
+	color: #29B297;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+//
+//
+// 7. Form Styles
+// 
+//
+
+*:focus { // Eliminates border on Chrome and Safari
+    outline: none;  
+}
+
+input[type="text"], input[type="email"], input[type="password"],
+textarea, select {
+	font-family: "Open Sans", arial, sans-serif;
+	border: 1px solid @lght-grey;
+	outline: none;
+	padding: 16px;
+	width: 100%;
+	font-weight: lighter;
+	font-size: 13px;
+	.box-sizing();
+	.round(5px);
+	resize: none;
+}
+
+label{
+	line-height: 26px;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+
+// input with icon on the right
+input.icon-input {
+	padding-right: 33px;
+
+	~ span{
+		position: absolute;
+		right: 23px;
+		top: 18px;
+		color: @med-grey;
+
+		&.icon-close {
+			cursor: pointer;
+			font-size: 14px;
+			padding: 1px;
+			display: none;
+		}
+	}
+}
+
+.disabled {
+	background: @lght-grey;
+}
+
+// Checkbox
+input[type="checkbox"] {
+	display: none;
+
+	&+ label::before{
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 22px;
+		background: url("../images/checkboxs.png") no-repeat 0px 2px;
+		margin: 0 10px 0 0;
+		vertical-align: top;
+	}
+
+	&:checked + label::before{
+		background-position: -21px 2px;
+	}
+
+	&.deselect + label::before{
+		background-position: -42px 2px;
+	}
+
+	&[disabled] {
+		&+ label::before {
+			cursor: default;
+			background: url("../images/checkboxs.png") no-repeat -63px 2px !important;
+		}
+	}
+}
+
+//
+//
+// 8. Buttons
+// 
+//
+.btn {
+    -moz-user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    background: @grayButton;
+    border: 3px solid @drk-grey;
+	.round(3px);
+	color: @white;
+	text-decoration: none;
+	position: relative;
+	font-size: 13px;
+	.transition(.2s);
+	-webkit-box-shadow: 0 3px 0 rgba(0,0,0, .1);
+	-moz-box-shadow: 0 3px 0 rgba(0,0,0,.1);
+	box-shadow: 0 3px 0 rgba(0,0,0,.1);
+
+	&:hover {
+		background: darken(@grayButton, 10%);
+    	border: 3px solid darken(@drk-grey, 10%);
+	}
+
+	&.login {
+		margin-top: 16px;
+		font-size: 16px;
+		width: 100%;
+		background: @yellow;
+		border: none;
+		height: 48px;
+		text-transform: uppercase;
+		color: @headerBackground;
+		-webkit-box-shadow: 0 8px 0px -3px rgba(0,0,0,.1);
+		-moz-box-shadow: 0 8px 0px -3px rgba(0,0,0,.1);
+		box-shadow: 0 8px 0px -3px rgba(0,0,0,.1);
+		.transition(.25s);
+
+		&:hover {
+			background: darken(@yellow, 5%);
+			color: darken(@headerBackground, 10%);
+			border: none
+		}
+	}
+
+	&.colored {
+		background: @mainColor;
+		border: 3px solid @mainDrk5;
+		position: relative;
+		color: @white;
+		.transition(.2s);
+
+		&:hover {
+			background: @mainDrk5;
+			border: 3px solid @mainDrk10;
+		}
+
+		&.disabled {
+			color: rgba(255,255,255,.5);
+			cursor: default;
+
+			&:hover {
+				background: @mainColor;
+				border: 3px solid @mainDrk5;
+			}
+
+			.icon-down-arrow {
+			    color: rgba(255,255,255,.5);
+			    .transition(.2s);
+			}
+		}
+
+		.icon-down-arrow{
+			color: @white;
+		}
+	}
+
+	&.large {
+		padding: 10px 45px;
+		font-size: 16px;
+		font-weight: 600;
+		position: relative;
+		transition: (.25s);
+
+		&:hover {
+			background: darken(@grayButton, 10%);
+			border: 3px solid darken(@drk-grey, 10%);
+		}
+	}
+
+	&.xlarge {
+	  font-weight: 600;
+	  padding: 12px 80px;
+	}
+
+	.icon-down-arrow {
+	    display: inline-block;
+	    width: 12px;
+	    height: 13px;
+	    color: @white;
+	    .transition(.2s);
+	    position: absolute;
+	    top: 8px;
+	}
+
+	.icon-dropdown {
+    	width: 10px;
+    	height: 10px;
+    	display: inline-block;
+    	position: absolute;
+    	background: transparent url("../../images/sprites.png") no-repeat scroll -53px -5px;
+		cursor: pointer;
+	}
+
+	&.c-icon {
+
+		.icon-down-arrow {
+			position: relative;
+			top: 1px;
+		}
+	}
+
+	&.l-icon {
+		padding: 6px 12px 6px 30px;
+
+		.icon-down-arrow {
+	    	left: 10px;
+		}
+	}
+
+	&.r-icon {
+		padding: 6px 30px 6px 12px;
+
+		.icon-down-arrow {
+	    	right: 10px;
+		}
+	}
+	&.dd-icon {
+		padding: 6px 30px 6px 12px;
+
+		.icon-down {
+			position: absolute;
+	    	right: 10px;
+	    	top: 12px;
+	    	font-size: 8px;
+		}
+	}
+
+	&.two-icon {
+		padding: 6px 30px;
+
+		.icon-left {
+			position: absolute;
+	    	left: 10px;
+	    	top: 8px;
+		}
+
+		.icon-right {
+			position: absolute;
+	    	right: 10px;
+	    	top: 8px;
+		}
+	}
+}
+
+//
+//
+// 9. Header
+// 
+//
+
+header{
+	.clearfix;
+	border-bottom: 1px solid grey;
+	background-color: @headerBackground;
+
+	.right, .left{
+		margin: 20px @pageGutter;
+		color: @white;
+	}
+
+	.left{
+		height: 33px;
+		line-height: 33px;
+	}
+
+	.btn {
+		background-color: @headerButtonBackground;
+		color: @white;
+		width: 120px;
+		height: 26px;
+		padding: 7px 0 0 40px;
+		border: none;
+		text-align: left;
+		.transition(.25s);
+
+		.icon {
+			position: absolute;
+			display: inline-block;
+			&.icon-down {
+				right: 15px;
+				top: 13px;	
+				font-size: .75em;
+
+			}
+
+			&.icon-person {
+				left: 10px;
+				top: 9px; 
+				font-size: 1.25em;
+			}
+		}
+
+		&:hover{
+			background-color: @headerButtonHover;
+			border: none;
+		}
+	}
+}
+
+#header-container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+// User tools menu dropdown
+#tools-menu {
+	list-style: none;
+	width: 140px;
+	padding: 0 10px;
+	position: absolute;
+	top: 40px;
+	background: @headerButtonBackground;
+	.round(3px);
+	z-index: 9999;
+
+	&.hidden {
+		display: none;
+	}
+	
+	li {
+		padding: 5px;
+		list-style: none;
+		a {
+			color: @white;
+			text-decoration: none;
+			font-size: 13px;
+			display: block;
+			padding: 3px 0;
+			.transition(.25s);
+
+		}
+	}
+
+	li:nth-last-child(n+2) {
+		border-bottom: 1px solid @white;
+	}
+}
+
+//
+//
+// 10. Content
+// 
+//
+
+#main {
+    display: table;
+    height: 100%;
+}
+
+.page-title{
+	margin: (@pageGutter - 5) @pageGutter 15px @pageGutter;
+
+	h1{
+		color: @mainColor;
+		line-height: 1em;
+	}
+
+	p{
+		color: @med-grey;
+		font-size: 13px;
+	}
+}
+
+//
+//
+// 11. Sidebar Navigation
+// 
+//
+
+.sidebar-nav {
+	width: @sideToolbarSize;
+	background: @sidebarNavBackground;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	padding-top: 12px;
+
+	ul {
+		list-style: none;
+		margin-top: 5px;
+
+		li {
+			list-style: none;
+			.clearfix;
+			overflow: hidden;
+			width: @sideToolbarSize;
+			margin: -1px 0 0 0;
+			padding: 0;
+		}
+	}
+
+	a {
+		display: block;
+		margin: 0;
+		padding: 0;
+		font-size: 16px;
+		color: @sidebarContentColor;
+		text-decoration: none;
+		.transition(.5s);
+
+		&:hover span, &.active span {
+			color: @mainColor;
+		}
+
+		&:hover .icon-dashboard, &.active .icon-dashboard,
+		&:hover .icon-dashboard + span, &.active .icon-dashboard + span {
+			color: @dashboard;
+		}
+
+		&:hover .icon-tracking, &.active .icon-tracking,
+		&:hover .icon-tracking + span, &.active .icon-tracking + span {
+			color: @tracking;
+		}
+
+		&:hover .icon-quote, &.active .icon-quote,
+		&:hover .icon-quote + span, &.active .icon-quote + span {
+			color: @quote;
+		}
+
+		&:hover .icon-shipments, &.active .icon-shipments,
+		&:hover .icon-shipments + span, &.active .icon-shipments + span {
+			color: @shipments;
+		}
+
+		&:hover .icon-billing, &.active .icon-billing,
+		&:hover .icon-billing + span, &.active .icon-billing + span {
+			color: @billing;
+		}
+
+		&:hover .icon-reports, &.active .icon-reports,
+		&:hover .icon-reports + span, &.active .icon-reports + span {
+			color: @reports;
+		}
+
+		&:hover .icon-doc-repo, &.active .icon-doc-repo,
+		&:hover .icon-doc-repo + span, &.active .icon-doc-repo + span {
+			color: @docRepo;
+		}
+	}
+
+	span {
+		display: block;
+		vertical-align: top;
+		width: 195px;
+		height: 49px;
+		padding: 25px 0 0 20px;
+		margin: 0;
+		position: absolute;
+		left: @sideToolbarSize;
+		top: 0;
+		background: @sidebarNavBackground;
+		.transition(.5s);
+	}
+
+	.icon {
+		display: block;
+		padding: 20px 0 0 0;
+		margin: 0;
+		vertical-align: top;
+		width: @sideToolbarSize;
+		height: 55px;
+		font-size: 34px;
+		text-align: center;
+		color: @sidebarContentColor;
+		.transition(.5s);
+
+		&.trigger{
+			background: url("../images/icon-trigger.png") no-repeat scroll 15px 16px rgba(0, 0, 0, 0);
+    		height: 37px;
+
+		}
+	}
+}
+
+//
+//
+// 12. Left Column
+// 
+//
+
+.left-colum{
+	background-color: @mainColor;
+	color: @white;
+	width: 240px;
+	display: table-cell;
+	vertical-align: top;
+	white-space: nowrap;
+	overflow: hidden;
+
+	.filter {
+		width: 100%;
+		padding: 18.5px @pageGutter;
+		.box-sizing;
+		border-bottom: 1px solid @mainDrk5;
+		border-top: 1px solid @mainLgt10;
+		font-weight: 600;
+		cursor: pointer;
+		.transition(.5s);
+
+		&:hover{
+			background-color: @mainLgt10;
+		}
+
+		&:nth-child(1){
+			border-top: none;
+		}
+
+		&:last-child {
+			&:after {
+			    border-bottom: 1px solid @mainLgt10;
+			    content: "";
+			    height: 55px;
+			    left: 1px;
+			    position: absolute;
+			    top: 5px;
+			    width: 239px;
+			}
+		}
+
+	}
+
+	.arrow{
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 20px;
+		border-right: 10px solid @white;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+	}
+	.selected{
+		background-color: @mainLgt10;
+		.arrow{
+			display: block;
+		}
+	}
+}
+
+//
+//
+// 13. Right Column
+// 
+//
+
+.right-colum {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 35px;
+
+    .content {
+    	border-top: 1px solid @lght-grey;
+    	padding: 15px 0 25px 0;
+
+		h2{
+			margin-bottom: 16px;
+
+			span{
+				color: @drk-grey;
+			}
+
+			a {
+				.right;
+				margin-top: 5px;
+			}
+		}
+	}
+}
+#table-search{
+	position: relative;
+	.left;
+	width: 290px;
+}
+
+//
+//
+// 14. Overlays
+// 
+//
+
+#overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: rgba(35,31,32,.8);
+}
+
+.m-modal{
+	display: none;
+	position: absolute;
+	left: 50%;
+	padding: 30px 40px 40px 40px;
+	width: 350px;
+	z-index: 1001;
+	background-color: white;
+	text-align: center;
+	.transition(all 1s);
+
+	h5 {
+		border-bottom: 1px solid #e6e7e8;
+		padding: 0 0 20px 0;
+		margin: 0 0 25px 0;
+	}
+
+	.btn {
+		&:last-child {
+			margin: 0 0 0 10px;
+		}
+	}
+}
+
+
+//
+//
+// 15. Media Queries
+// 
+//

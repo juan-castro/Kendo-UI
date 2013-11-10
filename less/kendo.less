@@ -1,0 +1,286 @@
+// 1. General Kendo
+
+@import "variables";
+//
+//
+// 1. General Kendo Grid
+// 
+//
+
+// Kendo Grid - table styles
+.kendo-table {
+	border: none;
+	overflow: hidden;
+	margin-top: 20px;
+
+	thead {
+		border: none;
+
+		th {
+
+			height: 26px;
+
+			&.k-header {
+				background-color: @drk-grey;
+				border: none;
+				color: @darkHeaderText;
+				font-size: 13px;
+				font-weight: 600;
+				text-transform: uppercase;
+				padding: 10px 16px;
+
+				.k-link {
+					padding: 0;
+					color: @darkHeaderText;
+					min-height: 19px;
+				}
+			}
+
+			span {
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+	}
+
+	tr {
+		border: none;
+
+		&.k-alt{
+			background-color: transparent;
+		}
+
+		&:hover{
+			background-color: @darkHeaderText;
+		}
+	}
+
+	td {
+		font-weight: lighter;
+		font-size: 13px;
+		border: none;
+		border-bottom: 1px solid @med-lght-grey;
+		padding: 10px 16px;
+
+		div + span{
+			display: inline-block;
+			margin: 6px 0;
+		}
+
+		.table-link {
+			text-decoration: none;
+			color: @table-text-grey;
+			vertical-align: top;
+
+			&:hover {
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+// Kendo Grid - pagination buttons
+#pag-bottom {
+	position: relative;
+
+	.k-dropdown {
+		position: absolute;
+		top: -37px;
+		right: 0;
+	}
+}
+
+.k-pager-wrap {
+	overflow: visible;
+	min-width: 155px;
+	.right;
+	.clearfix;
+	position: relative;
+	background: none;
+	line-height: 26px;
+	border: none;
+
+	&.pagerBottom {
+		margin: 20px 65px 0 0px;
+	}
+
+	.k-pager-info {
+	    font-size: 13px;
+	    margin: 3px 0 0 0;
+	    padding-right: 80px
+	}
+
+	a.k-link {
+		position: absolute;
+		border: 3px solid @drk-grey;
+		.round(3px);
+		background: @grayButton;
+		width: 26px;
+		height: 26px;
+		padding: 0;
+		margin: 0;
+		.transition(.25s);
+
+		&:hover {
+				background: darken(@grayButton, 10%);
+    			border: 3px solid darken(@drk-grey, 10%);  
+			}
+
+		&.k-state-disabled {
+			cursor: default;
+			.opacity(0.5);
+
+			&:hover {
+				background: @grayButton;
+    			border: 3px solid @drk-grey;
+    			.opacity(0.5);
+			}
+		}
+
+		.k-icon {
+			.opacity(1);
+			position: absolute;
+			top: 3px;
+			left: 5px;
+			margin: 0;
+		}
+	}
+
+	a.k-link:nth-child(2) {
+		right: 40px;
+	}
+
+	a.k-link:nth-child(4) {
+		right: 0;
+	}
+
+	.k-i-arrow-w {
+		background: transparent url("../images/sprites.png") no-repeat 2px -1px;
+	}
+
+	.k-i-arrow-e {
+		background: transparent url("../images/sprites.png") no-repeat -11px -1px;
+	}
+
+	a.k-link:nth-child(1), a.k-link:nth-child(5), .k-pager-numbers {
+		display: none;
+	}	
+}
+
+// Kendo Grid dropdown
+.k-dropdown {
+	width: 55px;
+	.right;
+	margin: 4px 0 0 10px;
+
+	.k-dropdown-wrap {
+		background: @grayButton;
+    	border: 3px solid @drk-grey;
+		.round(3px);
+		cursor: pointer;
+		.transition(.25s);
+		padding: 2px 22px 2px 2px;
+
+		&:hover {
+    		background: darken(@grayButton, 10%);
+    		border: 3px solid darken(@drk-grey, 10%);
+    	}
+
+    	&.k-state-border-up {
+			#box-shadow .custom(none);
+		}
+
+    	.k-input {
+			height: 22px;
+			padding: 0;
+			margin: 0 0 0 2px;
+			text-indent: -9999px;
+			background: transparent url("../images/sprites.png") no-repeat -28px 1px;
+		}
+
+		.k-select {
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin: 0 6px 0 0;
+			padding: 0;
+			background: transparent url("../images/sprites.png") no-repeat -53px 3px;
+			cursor: pointer;
+			top: 0;
+		}
+	}
+}
+
+.k-popup {
+	#box-shadow .custom(none);
+}
+
+// Kendo Grid - pagination dropdown
+#pagination{
+	.right;
+	padding-top: 12px;
+}
+
+#count-list, #count-bottom-list {
+	border: 1px solid @drk-grey;
+	background: @white;
+	.round(0);
+	padding-right: 0;
+	padding-left: 0;
+
+	ul {
+
+		li {
+			font-size: 13px;
+			padding: 5px 10px;
+			cursor: pointer;
+
+			&:hover {
+				background: @darkHeaderText;
+				.round(0);
+				border: none;
+				padding: 5px 10px;
+			}
+		}
+	}
+
+	#count_option_selected, #count-bottom_option_selected {
+		background: none;
+		.round(0);
+		border: none;
+		color: @table-text-grey;
+
+		&:hover {
+			background: @darkHeaderText;
+			.round(0);
+		}
+	}
+}
+
+// Kendo Grid - search highlight
+.highlight {
+	background-color: @mainLgt20;
+	vertical-align: top;
+}
+
+.table-type {
+	.highlight {
+		background: none;
+	}
+}
+
+//Kendo Table Header Sorting Arrows
+.k-grid-header .k-link > .k-icon.k-i-arrow-n,
+.k-grid-header .k-link > .k-icon.k-i-arrow-s{
+	display: inline-block;
+	background: transparent url("../images/sprites.png") no-repeat -53px 3px;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-top: -4px;
+	padding-top: 0;
+	opacity: 1;
+}
+
+.k-grid-header .k-link > .k-icon.k-i-arrow-n{
+	background-position: -122px 3px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Kendo UI</title>
+    <link href="css/kendo.common.min.css" rel="stylesheet" />
+    <link href="css/kendo.default.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/lib/jquery-1.10.2.js"></script>
+    <script src="js/lib/kendo.all.min.js"></script>
+    <script src="js/lib/highlight.js"></script>
+    <script src="js/function.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="left">
+                <span>&lt;Place Logo Here&gt;</span>
+            </div>
+
+            <div id="tools-container" class="right">
+                <a href="javascript:void(0);" id="tools" class="btn"><i class="icon icon-person"></i>John Smith<i class="icon icon-down"></i></a>
+                <ul id="tools-menu" class="hidden">
+                    <li><a href="javascript:void(0);" title="Sign Out">Sign Out</a></li>
+                    <li><a href="javascript:void(0);" id="account-info" title="Account Info">Account Info</a></li>
+                    <li><a href="javascript:void(0);" title="Add User Info">Add User</a></li>
+                </ul>
+            </div>
+        </header><!-- End Header -->
+
+        <div class="page-title">
+            <h1>Application Dashboard</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed urna.</p>
+        </div> <!-- End Page Title -->
+
+        <div id="main" class="span4 ng">
+            <div class="left-colum">
+                <div class="selected filter" data-type="REC">
+                    <span>Recently Added</span>
+                    <div class="arrow"></div>
+                </div>
+                <div class="filter" data-type="BOL">
+                    <span>Bill of Ladings</span>
+                    <div class="arrow"></div>
+                </div>
+                <div class="filter" data-type="POD">
+                <span>Proof of Deliveries</span>
+                    <div class="arrow"></div>
+                </div>
+                <div class="filter" data-type="TEN">
+                    <span>Tenders</span>
+                    <div class="arrow"></div>
+                </div>
+                <div class="filter" data-type="INV">
+                    <span>Invoices</span> 
+                    <div class="arrow"></div>
+                </div>
+                <div class="filter" data-type="OTH">
+                    <span>Other</span>
+                    <div class="arrow"></div>
+                </div>
+            </div> <!-- End Left Column -->
+            <div class="right-colum">
+                <div class="content">
+                    <h2>
+                        <span id="table-title">Recently Added</span>
+                        <a href="javascript:void(0);" class="btn colored l-icon" id="download-doc"><span class="icon-down-arrow"></span>Download Document(s)</a>
+                    </h2>
+
+                    <div class="table-header clearfix">
+                        <div id="table-search">
+                            <input class="icon-input" id="search-input" type="text" placeholder="Search Documents...">
+                            <span class="icon-search"></span>
+                            <span class="icon-close" id="clear-search"></span>
+                        </div>
+
+                        <div id="pagination">
+                            <div id="count"></div>
+                        </div>
+                    </div>
+
+                    <div id="docRepoTable" class="kendo-table"></div>
+
+                    <div id="pag-bottom">
+                        <div id="count-bottom"></div>
+                    </div>
+                                        
+                </div>
+            </div> <!-- End Right Column-->
+        </div>
+    </div>
+    
+    <!-- Start sidebar navigation-->
+    <div class="sidebar-nav">
+        <a href="javascript:void(0);" class="nav-trigger"><i class="icon trigger"></i></a>
+        <ul>
+            <li><a href="javascript:void(0);" class="active"><i class="icon icon-dashboard"></i><span>Dashboard</span></a></li>
+            <li><a href="javascript:void(0);"><i class="icon icon-tracking"></i><span>Tracking</span></a></li>
+            <li><a href="javascript:void(0);"><i class="icon icon-quote"></i><span>Get Quote</span></a></li>
+            <li><a href="javascript:void(0);"><i class="icon icon-shipments"></i><span>Shipments</span></a></li>
+            <li><a href="javascript:void(0);"><i class="icon icon-billing"></i><span>Billing &amp; Payments</span></a></li>
+            <li><a href="javascript:void(0);"><i class="icon icon-reports"></i><span>Reports</span></a></li>
+            <li><a href="javascript:void(0);"><i class="icon repository icon-doc-repo"></i><span>Document Repository</span></a></li>
+        </ul>
+    </div>
+    <!-- End sidebar navigation-->
+
+
+</body>
+</html>

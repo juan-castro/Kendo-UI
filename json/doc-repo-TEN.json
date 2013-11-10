@@ -1,0 +1,70 @@
+[
+	{
+		"ReferenceNumber" : "ENT123508947.doc",
+		"DocumentName"				: "TL Tender",
+		"CategoryCode"				: "TEN",
+		"CategoryName"				: "Tender",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+		"ReferenceNumber" : "ENT123508947",
+		"DocumentName"				: "TL Tender.doc",
+		"CategoryCode"				: "TEN",
+		"CategoryName"				: "Tender",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+		"ReferenceNumber" : "ENT123508947",
+		"DocumentName"				: "TL Tender.doc",
+		"CategoryCode"				: "TEN",
+		"CategoryName"				: "Tender",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+		"ReferenceNumber" : "ENT123508947",
+		"DocumentName"				: "TL Tender.doc",
+		"CategoryCode"				: "TEN",
+		"CategoryName"				: "Tender",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+
+		"ReferenceNumber" : "ENT123508947",
+		"DocumentName"				: "TL Tender.doc",
+		"CategoryCode"				: "TEN",
+		"CategoryName"				: "Tender",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+
+		"ReferenceNumber" : "ENT123508947",
+		"DocumentName"				: "TL Tender.doc",
+		"CategoryCode"				: "TEN",
+		"CategoryName"				: "Tender",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+		"ReferenceNumber" : "ENT123508947",
+		"DocumentName"				: "TL Tender.doc",
+		"CategoryCode"				: "TEN",
+		"CategoryName"				: "Tender",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+
+		"ReferenceNumber" : "ENT123508947",
+		"DocumentName"				: "TL Tender.doc",
+		"CategoryCode"				: "TEN",
+		"CategoryName"				: "Tender",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	}
+]

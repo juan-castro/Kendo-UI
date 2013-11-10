@@ -1,0 +1,75 @@
+[
+	{
+		"ReferenceNumber" : "ENT1508947",
+		"DocumentName"				: "Bill of Lading_1509583.pdf",
+		"CategoryCode"				: "BOL",
+		"CategoryName"				: "Bill of Lading",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+		"ReferenceNumber" : "ENT1508347",
+		"DocumentName"				: "Bill of Lading_15239583.pdf",
+		"CategoryCode"				: "BOL",
+		"CategoryName"				: "Bill of Lading",
+		"CreatedDate"				: "8/29/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+		"ReferenceNumber" : "ENT1508947",
+		"DocumentName"				: "3Bill of Lading_1509583.pdf",
+		"CategoryCode"				: "BOL",
+		"CategoryName"				: "Bill of Lading",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+		"ReferenceNumber" : "ENT1508347",
+		"DocumentName"				: "Bill of Lading_15239583.pdf",
+		"CategoryCode"				: "BOL",
+		"CategoryName"				: "Bill of Lading",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+		"ReferenceNumber" : "ENT1508947",
+		"DocumentName"				: "Bill of Lading_1509583.pdf",
+		"CategoryCode"				: "BOL",
+		"CategoryName"				: "Bill of Lading",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+		"ReferenceNumber" : "ENT1508347",
+		"DocumentName"				: "Bill of Lading_15239583.txt",
+		"CategoryCode"				: "BOL",
+		"CategoryName"				: "Bill of Lading",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+		"ReferenceNumber" : "ENT1508347",
+		"DocumentName"				: "Bill of Lading_15239583.pdf",
+		"CategoryCode"				: "BOL",
+		"CategoryName"				: "Bill of Lading",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+		"ReferenceNumber" : "ENT1508947",
+		"DocumentName"				: "Bill of Lading_1509583.pdf",
+		"CategoryCode"				: "BOL",
+		"CategoryName"				: "Bill of Lading",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	},{
+		"ReferenceNumber" : "ENT1508347",
+		"DocumentName"				: "Bill of Lading_15239583.txt",
+		"CategoryCode"				: "BOL",
+		"CategoryName"				: "Bill of Lading",
+		"CreatedDate"				: "8/30/13",
+		"ImagePath"					: "images/BOL-Document-Image.png",
+		"Selected"					: false
+	}
+]

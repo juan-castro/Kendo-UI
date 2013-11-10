@@ -1,0 +1,96 @@
+// CSS Structure
+// 1. Importing
+// 2. Kendo Specific Styles
+// 3. Module Specific Colorings
+// 4. Media Queries
+
+
+//
+//
+// 1. Importing
+// 
+//
+
+@import "styles";
+@import "kendo";
+
+//
+//
+// 2. Kendo Specific Styles
+//
+//
+.kendo-table{
+	.table-type{
+		.right;
+		height: 32px;
+		width: 32px;
+		font-size: 11px;
+		background-color: @mainDrk20;
+		color: @white;
+		text-align: center;
+		padding-top: 7px;
+		margin-right: 45px;
+		.box-sizing;
+		.transition(.7s);
+
+		&.BOL{
+			background-color: @mainDrk20;
+			color: @white;
+		}
+
+		&.INV{
+			background-color: @mainLgt10;
+			color: darken(@mainDrk10, 20%);
+		}
+
+		&.POD{
+			background-color: @mainDrk10;
+			color: @white;
+		}
+
+		&.TEN{
+			background-color: @mainColor;
+			color: @white;
+		}
+
+		&.OTH{
+			background-color: @mainLgt20;
+			color: darken(@mainDrk10, 20%);
+		}
+	}
+}
+
+//
+//
+// 3. Module Specific
+//
+//
+.page-title h1{
+	color: @docRepo;
+}
+
+//
+//
+// 4. Media Queries
+// 
+//
+
+@media screen and (max-width: 925px) {
+
+	.filter {
+		font-size: 14px;
+
+		&:last-child {
+			&:after {
+			    top: 3px !important;
+			}
+		}
+	}
+	
+	.kendo-table .table-type {
+		.left;
+	}
+}
+
+
+
